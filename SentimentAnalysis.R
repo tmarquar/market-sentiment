@@ -1,0 +1,10 @@
+library("Quandl")
+
+tweets = read.csv("C:/Users/Talon/Desktop/TestTwitterProj/TweetSentiment_cleaned.csv")
+stock = read.csv("C:/Users/Talon/Desktop/TestTwitterProj/nasdaq_cleaned.csv")
+#myData = Quandl("NASDAQOMX/COMP",start_date="2017-12-02", end_date="2018-10-19")
+#write.csv(myData,"C:/Users/Talon/Desktop/TestTwitterProj/nasdaq.csv")
+plot(ts(dat[2]))
+plot(ts(myData[2]))
+nas = diff(ts(myData[2]))
+plot(ts(nas))
